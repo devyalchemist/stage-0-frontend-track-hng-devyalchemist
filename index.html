@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<article data-testid="test-profile-card" class="profile-card-container">
+			<header data-testid="test-user-name" class="profile-name">
+				Gospel Ugwuja
+			</header>
+			<p data-testid="test-user-bio">
+				I am a fullstack developer passionate about building scalable and
+				responsive web applications optimised for real-time productive
+				workspace. I am familiar with working with RESTful APIs, primarily in
+				the Javascript environment. I am proficient in using React.js too and
+				enjoy the robust utility npm offers, therefore I am open to
+				collaboration
+			</p>
+			<p id="time"></p>
+			<figure>
+				<img
+					data-testid="test-user-avatar"
+					src="./images/main.jpg"
+					alt="profile-image" />
+			</figure>
+			<ul data-testid="test-user-social-links" class="socials">
+				<li data-testid="test-user-social-twitter">
+					<a target="_blank" href="https://x.com/devyalchemist">Twitter</a>
+				</li>
+				<li data-testid="test-user-social-instagram">
+					<a target="_blank" href="https://www.instagram.com/gospel_uo/"
+						>Instagram</a
+					>
+				</li>
+				<li data-testid="test-user-social-github">
+					<a target="_blank" href="https://github.com/devyalchemist">Github</a>
+				</li>
+			</ul>
+			<section data-testid="test-user-dislikes" class="hobbies">
+				Hobbies
+				<ul>
+					<li>Playing chess</li>
+					<li>Calisthenics</li>
+					<li>Drawing/Painting</li>
+					<li>Cooking</li>
+				</ul>
+			</section>
+			<section data-testid="test-user-dislikes" class="dislikes">
+				Dislikes
+				<ul>
+					<li>Gossiping</li>
+					<li>Noise</li>
+					<li>Unproductive course</li>
+				</ul>
+			</section>
+		</article>
+	</body>
+	<script>
+		const timeInMillisecond = Date.now();
+		document.getElementById("time").innerHTML = timeInMillisecond;
+	</script>
+</html>
